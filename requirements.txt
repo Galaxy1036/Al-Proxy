@@ -1,0 +1,6 @@
+frida
+twisted
+colorama
+requests
+asn1crypto
+pycryptodome

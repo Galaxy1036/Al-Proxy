@@ -1,0 +1,6 @@
+{
+	"Port": 4060,
+	"TCPHost": "127.0.0.1",
+	"Hostname": "account.spacetimestudios.com",
+	"ReplayDirectory": "Replay"
+}
