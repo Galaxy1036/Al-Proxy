@@ -7,7 +7,7 @@ Arcane Legends is a Mobile & Browser MMORPG game, the game actually use a custom
 The goal of this repository is to capture all the game packets and decrypt encrypted one.
 
 ## How to use it
-First of all you will need to build a modded apk with a custom certificate in it in order to allow the proxy to decrypt your game packets.
+First of all you will need to build a modded apk with a custom certificate in it in order to allow the proxy to decrypt your game packets. For further explanation about the game packet format & encryption look at the repository [wiki](https://github.com/Galaxy1036/Al-Proxy/wiki)
 
 ### Creating certificate & private key
 Make sure you have **openssl** installed before running the following commands.

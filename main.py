@@ -12,7 +12,6 @@ from twisted.internet import reactor
 from replay import Replay
 from tcp.crypto import RsaCrypto
 from tcp.proxy import setup_proxy
-from tcp.packet.packetEnum import packet_names
 from web.web_server import Webroot
 
 
@@ -26,6 +25,9 @@ def on_close():
 def on_frida_message(message, _):
     if message['type'] == 'send':
         if message['payload']['type'] == 'packetName':
+            with open('tcp/packet/packet_names.json', 'r') as f:
+                packet_names = json.load(f)
+
             if message['payload']['packetName'] not in packet_names:
                 packet_names.append(message['payload']['packetName'])
 

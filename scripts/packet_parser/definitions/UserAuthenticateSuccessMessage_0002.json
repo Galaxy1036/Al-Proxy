@@ -1,0 +1,24 @@
+{
+  "name": "UserAuthenticateSuccessMessage_0002",
+  "fields": [
+	{"type": "INT"},
+	{"type": "INT"},
+	{"name": "Patch files info", "lengthType": "SHORT", "components": [
+		{"name": "Filename", "type": "STRING"},
+		{"name": "File CRC32C", "type": "INT"},
+		{"name": "File Size", "type": "INT"}
+	]},
+	{"type": "DATA", "length": 16},
+	{"name": "Zone info", "lengthType": "SHORT", "components": [
+		{"name": "Zone name", "type": "STRING"},
+		{"type": "INT"},
+		{"name": "Zone sub info", "lengthType": "SHORT", "components": [
+			{"name": "Unknown1", "type": "STRING"},
+			{"name": "Unknown2", "type": "STRING"}
+		]}
+	]},
+	{"name": "Unknown ints", "lengthType": "SHORT", "components": [
+		{"name": "Unkwown int", "type": "INT"}
+	]}
+  ]
+}

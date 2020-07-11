@@ -1,0 +1,20 @@
+{
+  "name": "DeviceInfoMessage_0007",
+  "fields": [
+	{"type": "INT"},
+	{"name": "Android Device ID", "type": "OBFUSCATED_STRING"},
+	{"name": "Device Model", "type": "OBFUSCATED_STRING"},
+	{"name": "System Version", "type": "OBFUSCATED_STRING"},
+	{"name": "Bundle Version", "type": "OBFUSCATED_STRING"},
+	{"name": "Country Code", "type": "OBFUSCATED_STRING"},
+	{"name": "Language", "type": "OBFUSCATED_STRING"},
+	{"name": "Push Notification Device Token", "type": "OBFUSCATED_STRING"},
+	{"name": "Device Store", "type": "OBFUSCATED_STRING"},
+	{"name": "Device Infos", "lengthType": "SHORT", "components": [
+		{"type": "INT"},
+		{"name": "Info", "type": "OBFUSCATED_STRING"}
+	]},
+	{"type": "DATA", "length": 16},
+	{"type": "BYTE"}
+  ]
+}
