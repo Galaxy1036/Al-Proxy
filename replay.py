@@ -4,7 +4,6 @@ import os
 class Replay:
 
     def __init__(self, dirname):
-        self.session = None
         self.dirname = dirname
 
         self.message_index_path = '{}/message.index'.format(self.dirname)

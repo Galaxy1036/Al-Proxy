@@ -26,10 +26,11 @@ def on_close():
 def on_frida_message(message, _):
     if message['type'] == 'send':
         if message['payload']['type'] == 'packetName':
-            packet_names.append(message['payload']['packetName'])
+            if message['payload']['packetName'] not in packet_names:
+                packet_names.append(message['payload']['packetName'])
 
-        with open('tcp/packet/packet_names.json', 'w') as f:
-            f.write(json.dumps(packet_names))
+                with open('tcp/packet/packet_names.json', 'w') as f:
+                    f.write(json.dumps(packet_names))
 
 
 def start_frida_script():
